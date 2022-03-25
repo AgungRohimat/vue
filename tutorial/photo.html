@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        .row.content {
+            height: 1500px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>{{Johns}}</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="home.html">{{Home}}</a></li>
+                    <li><a href="bio.html">{{bio}}</a></li>
+                    <li ><a href="teman.html">{{Friends}}</a></li>
+                    <li class="active"><a href="photo.html">{{Photos}}</a></li>
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">RCL</div>
+                            <div class="panel-body"><img src="image/" class="img-responsive"
+                                    style="width:100%" alt="Image"></div>
+                                    <button class="panel-footer"> {{Next}} </button>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">SKOAD</div>
+                            <div class="panel-body"><img src="image/SKOAD.jpeg"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <button class="panel-footer"> {{Next}} </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">Rohis</div>
+                            <div class="panel-body"><img src="image/Rohis.jpeg"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <button class="panel-footer"> {{Next}} </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">EC</div>
+                            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <button class="panel-footer"> {{Next}} </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">Lusi Ramandari</div>
+                            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">Amelia </div>
+                            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">Fani Ramadhanty </div>
+                            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Cecep Superi</div>
+                            <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE"
+                                    class="img-responsive" style="width:100%" alt="Image"></div>
+                            <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+        </div>
+
+        <script>
+            let app = new Vue({
+                el: '#app',
+                data: {
+                    Home: 'Rumah',
+                    Friends: 'Teman',
+                    bio: 'Biodata',
+                    Photos: 'Photo',
+                    Johns: 'My Home',
+                    Next: 'Selengkapnya'
+
+                }
+            })
+        </script>
+</body>
+
+</html>
